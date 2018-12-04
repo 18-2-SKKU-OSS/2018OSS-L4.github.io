@@ -2,6 +2,7 @@
 title: README.md
 date: 2018-12-04 19:00:09
 tags:
+categories: ["WIKI"]
 ---
 
 이 브랜치는...

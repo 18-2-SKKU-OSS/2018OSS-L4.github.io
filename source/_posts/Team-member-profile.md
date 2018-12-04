@@ -2,6 +2,7 @@
 title: Team member profile
 date: 2018-12-04 18:47:25
 tags:
+categories: ["WIKI"]
 ---
 
 주재현
