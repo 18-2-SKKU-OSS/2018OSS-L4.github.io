@@ -23,7 +23,7 @@
 
     <!--Open Graph Title-->
     
-        <meta property="og:title" content="custom command 팀 프로젝트 1">
+        <meta property="og:title" content="custom command 팀 프로젝트 4 텍스트 파일 읽기">
     
 
     <!--Open Graph Description-->
@@ -55,7 +55,7 @@
 
     <!-- Title -->
     
-    <title>custom command 팀 프로젝트 1 - 2018(2)OSS-L4</title>
+    <title>custom command 팀 프로젝트 4 텍스트 파일 읽기 - 2018(2)OSS-L4</title>
 
     <!-- Bootstrap Core CSS -->
     <link href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" rel="stylesheet">
@@ -165,7 +165,7 @@
         <div class="row">
             <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
                 <div class="post-heading">
-                    <h1>custom command 팀 프로젝트 1</h1>
+                    <h1>custom command 팀 프로젝트 4 텍스트 파일 읽기</h1>
                     
                     <span class="meta">
                         <!-- Date and Author -->
@@ -205,9 +205,20 @@
 
             <!-- Post Main Content -->
             <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
-                <h1 id="로직-설계"><a href="#로직-설계" class="headerlink" title="로직 설계"></a>로직 설계</h1><hr>
-<p>기존의 뮤직봇 명령어를 고객이 원하는 명령어로 바꾸어 사용할 수 있는 custom command의 필요성을 느끼게 되었고, 코드작성에 앞서 로직을 설계하게 되었다.</p>
-<p><img src="./image/1544424251341.jpg" alt="good"></p>
+                <h1 id="텍스트-파일-읽기"><a href="#텍스트-파일-읽기" class="headerlink" title="텍스트 파일 읽기"></a>텍스트 파일 읽기</h1><hr>
+<p>에러가 없다면 정상적으로 </p>
+<p>작성된 커스텀 명령어 txt파일을 읽는다.</p>
+<p>#configparser cannot read international characters. code write required<br>def readcommand(config_file):<br>    filecheck(‘custom_command.txt’)<br>    f_commands = open(‘../config/custom_command.txt’,encoding=’UTF8’)<br>    lines = f_commands.readlines()</p>
+<pre><code>commands = {}
+for i in lines:
+    if &apos;=&apos; in i:
+        item = i.split(&apos;=&apos;)
+        #delete space, &apos;feff&apos; exception, delete &apos;\n&apos;
+        commands[item[0].replace(&apos; &apos;,&apos;&apos;).replace(&apos;\ufeff&apos;,&apos;&apos;)] = &apos;cmd_&apos; + item[1].replace(&apos; &apos;,&apos;&apos;).replace(&apos;\n&apos;,&apos;&apos;)
+f_commands.close()
+return commands
+</code></pre><p>#erase contents and write string in r+ file<br>def clearwrite(file,string):<br>    file.seek(0)<br>    file.truncate(0)<br>    file.write(string)</p>
+<p>주소 : <a href="https://github.com/18-2-SKKU-OSS/2018-2-OSS-L4/blob/master/musicbot/custom.py" target="_blank" rel="noopener">https://github.com/18-2-SKKU-OSS/2018-2-OSS-L4/blob/master/musicbot/custom.py</a></p>
 
 
                 
