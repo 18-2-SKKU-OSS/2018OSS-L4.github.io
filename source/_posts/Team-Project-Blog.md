@@ -5,6 +5,10 @@ tags:
 categories: ["WIKI"]
 ---
 
-설명 뮤직봇 프로젝트를 관리해주는 블로그입니다.
+# Team Project Blog
 
-주소 https://18-2-skku-oss.github.io/L4blog/
+---
+
+뮤직봇 프로젝트를 보기쉽고, 손쉽게 관리할 수 있도록 하는 블로그입니다.
+
+주소 : https://18-2-skku-oss.github.io/L4blog/
