@@ -23,7 +23,7 @@
 
     <!--Open Graph Title-->
     
-        <meta property="og:title" content="2018(2)OSS-L4">
+        <meta property="og:title" content="뮤직봇 프로젝트 소개">
     
 
     <!--Open Graph Description-->
@@ -36,7 +36,7 @@
 
     <!--Type page-->
     
-        <meta property="og:type" content="website">
+        <meta property="og:type" content="article">
     
 
     <!--Page Cover-->
@@ -55,7 +55,7 @@
 
     <!-- Title -->
     
-    <title>2018(2)OSS-L4</title>
+    <title>뮤직봇 프로젝트 소개 - 2018(2)OSS-L4</title>
 
     <!-- Bootstrap Core CSS -->
     <link href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" rel="stylesheet">
@@ -158,96 +158,80 @@
 
     <!-- Main Content -->
     <!-- Page Header -->
-<!-- Set your background image for this header in the theme's configuration: index_cover -->
+<!-- Set your background image for this header in your post front-matter: cover -->
+
 <header class="intro-header" style="background-image: url('http://www.codeblocq.com/assets/projects/hexo-theme-clean-blog/img/home-bg.jpg')">
     <div class="container">
         <div class="row">
             <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
-                <div class="site-heading">
-                    <h1>2018(2)OSS-L4</h1>
-                    <hr class="small">
-                    <span class="subheading">Music bot</span>
+                <div class="post-heading">
+                    <h1>뮤직봇 프로젝트 소개</h1>
+                    
+                    <span class="meta">
+                        <!-- Date and Author -->
+                        
+                        
+                            2018-12-10
+                        
+                    </span>
                 </div>
             </div>
         </div>
     </div>
 </header>
 
-<!-- Main Content -->
-<div class="container">
-    <div class="row">
-        <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
-            
-                <div class="post-preview">
-    <a href="/L4blog/2018/12/10/README-md (사본)/">
-        <h2 class="post-title">
-            뮤직봇 프로젝트 소개
-        </h2>
-        
-    </a>
-    <p class="post-meta">
-        <!-- Date and Author -->
-        
-        2018-12-10
-    </p>
-</div>
-<hr>
-            
-                <div class="post-preview">
-    <a href="/L4blog/2018/12/04/Team-Project-Blog/">
-        <h2 class="post-title">
-            Team Project Blog
-        </h2>
-        
-    </a>
-    <p class="post-meta">
-        <!-- Date and Author -->
-        
-        2018-12-04
-    </p>
-</div>
-<hr>
-            
-                <div class="post-preview">
-    <a href="/L4blog/2018/12/04/README-md/">
-        <h2 class="post-title">
-            README.md
-        </h2>
-        
-    </a>
-    <p class="post-meta">
-        <!-- Date and Author -->
-        
-        2018-12-04
-    </p>
-</div>
-<hr>
-            
-                <div class="post-preview">
-    <a href="/L4blog/2018/12/04/Team-member-profile/">
-        <h2 class="post-title">
-            Team member profile
-        </h2>
-        
-    </a>
-    <p class="post-meta">
-        <!-- Date and Author -->
-        
-        2018-12-04
-    </p>
-</div>
-<hr>
+<!-- Post Content -->
+<article>
+    <div class="container">
+        <div class="row">
+
+            <!-- Tags and categories -->
+           
+                <div class="col-lg-4 col-lg-offset-2 col-md-5 col-md-offset-1 post-tags">
+                    
+                        
+
+<a href="/L4blog/categories/PROJECT/">PROJECT</a>
+
+                    
+                </div>
+                <div class="col-lg-4 col-md-5 post-categories">
+                    
+                </div>
             
 
-            <ul class="pager">
-    
-    
-</ul>
+            <!-- Gallery -->
+            
+
+            <!-- Post Main Content -->
+            <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+                <p>MusicBot<br>About this branch</p>
+<p>This branch of MusicBot is only compatible with the rewrite version of the discord.py library, which can be installed using python3 -m pip install -U git+<a href="https://github.com/Rapptz/discord.py@rewrite#egg=discord.py[voice]" target="_blank" rel="noopener">https://github.com/Rapptz/discord.py@rewrite#egg=discord.py[voice]</a>. It is also a dependency in requirements.txt, so should be automatically installed by the bot if you run update.py.</p>
+<p>GitHub release v1.9.8_2 Python 3.5, 3.6 Discord</p>
+<p>MusicBot is the original Discord music bot written for Python 3.5+, using the discord.py library. It plays requested songs, from YouTube and other services, into a Discord server (or multiple servers) and if the queue becomes empty it will play through a list of existing songs, if configured to do so. The bot features a permissions system allowing owners to restrict commands to certain people. As well as playing songs, MusicBot is capable of streaming live media into a voice channel (experimental).</p>
+<p><img src="/image/main.png" alt=""></p>
+<p>Setup<br>Setting up the MusicBot is relatively painless - just follow one of the guides we have created for you. After that, you can begin to configure your bot to ensure that it can connect to Discord.</p>
+<p>The main configuration file is config/options.ini, but is not included. Simply make a copy of example_options.ini and rename to options.ini. See example_options.ini for more information on how to configure it.</p>
+<p>Commands<br>There are many commands that can be used with the bot. Most notably, the play <url> command (preceded by your command prefix) will download, process, and play a song from YouTube or a similar site. A full list of commands are available here.</url></p>
+<p>Further reading<br>Support Discord server<br>Project license</p>
+<p>명령어들<br>봇을 위해 굉장히 많은 명령어들이 있습니다. 가장 중요한 명령어는 play <url> 입니다(preceded by your command prefix). 이 명령어는 유튜브나 다른 플랫폼에서 음악을 다운로드하고 플레이합니다. 모든 명령어를 보려면 여기를 클릭하세요.</url></p>
+<p>추가적인 문서<br>Support Discord server<br>Project license</p>
+
+
+                
+            </div>
+
+            <!-- Comments -->
+            
+                <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+                    
+
+
+                </div>
+            
         </div>
     </div>
-</div>
-
-
+</article>
 
     <!-- Footer -->
     <hr>
